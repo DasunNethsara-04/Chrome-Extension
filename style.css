@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.popup {
+    width: 350px;
+}
+.popup :where(.picker, header, .color, .all-color) {
+    display: flex;
+}
+.popup .picker {
+    padding: 30px 0;
+    justify-content: center;
+    background: #e3f2fd;
+}
+
+.picker #color-picker {
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #5372f0;
+}
+
+.picked-colors {
+    margin: 10px 15px;
+}
+
+.picked-colors header {
+    justify-content: space-between;
+}
+
+.picked-colors .hide {
+    display: none;
+}
+
+.picked-colors .clear-all {
+    color: #5372f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.all-color {
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.all-color .color {
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100% / 3);
+}
+
+.all-color .color .rect {
+    display: flex;
+    height: 22px;
+    width: 22px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.all-color .color .value {
+    font-size: 0.96rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Open sans";
+}
