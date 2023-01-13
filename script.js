@@ -24,7 +24,6 @@ const showColors = () => {
         li.addEventListener("click", e => copyColor(e.currentTarget.lastElementChild));
     });
 }
-
 showColors();
 
 const activityEyeDropper = async () => {

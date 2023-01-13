@@ -42,7 +42,7 @@ body {
     justify-content: space-between;
 }
 
-.picked-colors .hide {
+.picked-colors.hide {
     display: none;
 }
 
